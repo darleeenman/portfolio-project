@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #b3a7e0;
+  --secondary-color: #a2c4d7;
+  --btn-color: #aa95ff;
+  --bg-color: #1b1f23;
+}
+
+h1 {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
