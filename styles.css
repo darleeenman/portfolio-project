@@ -4,6 +4,7 @@
   --btn-font-color: #272142;
   --btn-color: #aa95ff;
   --bg-color: #1b1f23;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -81,5 +82,91 @@ h2 {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 576px) {
+  text-align: center;
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
