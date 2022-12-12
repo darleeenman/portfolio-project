@@ -9,7 +9,9 @@
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
-
+body {
+  background: var(--bg-color);
+}
 h1 {
   color: var(--primary-color);
   font-family: var(--heading-font-family);
@@ -17,11 +19,18 @@ h1 {
   font-size: 96px;
   line-height: 1.5;
 }
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
 p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  color: var(--secondary-color);
 }
 
 .hero {
@@ -55,6 +64,10 @@ p {
 h2 {
   font-size: 62px;
 }
+h2,
+h3 {
+  color: var(--secondary-color);
+}
 .btn-branding-outline {
   color: var(--btn-font-color);
   border: 1px solid var(--btn-color);
@@ -68,22 +81,6 @@ h2 {
   padding: 120px 60px;
 }
 
-@media (max-width: 960px) {
-  h1 {
-    font-size: 60px;
-    line-height: 1.5;
-  }
-  h2 {
-    font-size: 44px;
-  }
-  .hero {
-    padding: 80px 20px;
-  }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -124,9 +121,14 @@ h2 {
   margin: 10px;
 }
 .contact-link {
-  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background: transparent;
   box-shadow: var(--box-shadow);
   color: white;
+}
+.contact-link:hover {
+  background: var(--secondary-color);
+  color: var(--btn-font-color);
 }
 .email-link {
   display: flex;
@@ -150,23 +152,32 @@ h2 {
   display: block;
   text-align: center;
 }
-.secondary-link {
+.primary-link:hover {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background: transparent;
+  border: 1px solid var(--btn-color);
 }
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 576px) {
-  text-align: center;
-
-  p {
-    font-size: 18px;
+@media (max-width: 960px) {
+  h1 {
+    font-size: 60px;
     line-height: 1.5;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
   }
 }
