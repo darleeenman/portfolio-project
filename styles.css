@@ -61,13 +61,28 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
+.btn-primary:hover {
+  color: #a2c4d7;
+  background: transparent;
+  border: 1px solid var(--btn-color);
+}
 h2 {
   font-size: 62px;
 }
-h2,
-h3 {
-  color: var(--secondary-color);
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
 }
+.about-section h3 {
+  color: var(--secondary-color);
+  font-family: var(--default-font-family);
+  font-weight: lighter;
+}
+.about-section p {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
 .btn-branding-outline {
   color: var(--btn-font-color);
   border: 1px solid var(--btn-color);
@@ -112,13 +127,15 @@ h3 {
   display: block;
 }
 
-.about-paragraphs {
+.about-content {
   display: flex;
   margin: 30px 0;
 }
 
-.about-paragraphs p {
+.about-content p {
   margin: 10px;
+  color: var(--btn-color);
+  font-weight: lighter;
 }
 .contact-link {
   border: 1px solid var(--primary-color);
@@ -164,6 +181,13 @@ h3 {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.contact {
+  font-family: var(--heading-font-family);
+  color: var(--secondary-color);
+}
+.about-paragraphs {
+  margin: 30px;
 }
 @media (max-width: 960px) {
   h1 {
