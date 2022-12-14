@@ -189,6 +189,19 @@ h2 {
 .about-paragraphs {
   margin: 30px;
 }
+.content-container {
+  padding: 160px 20px;
+}
+.content {
+  color: var(--secondary-color);
+}
+.content h1 {
+  font-size: 64px;
+}
+.content h1,
+h3 {
+  text-align: left;
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 60px;
