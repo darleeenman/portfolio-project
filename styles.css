@@ -37,6 +37,9 @@ h4 {
   font-size: 48px;
   color: var(--secondary-color);
 }
+.navbar-brand {
+  margin-right: 920px;
+}
 .hero {
   background: var(--bg-color);
   text-align: center;
