@@ -52,7 +52,7 @@ h4 {
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: normal;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.5;
 }
 
@@ -185,6 +185,7 @@ h2 {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-top: 200px;
 }
 .contact {
   font-family: var(--heading-font-family);
@@ -258,6 +259,13 @@ footer .btn-branding-outline:hover {
 
 footer .contact-btn {
   margin: auto;
+}
+footer .text-center {
+  font-family: var(--default-font-family);
+  font-size: medium;
+}
+footer .text-center a {
+  text-decoration: none;
 }
 @media (max-width: 960px) {
   h1 {
