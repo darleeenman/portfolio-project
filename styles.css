@@ -267,6 +267,12 @@ footer .contact-btn {
   h2 {
     font-size: 44px;
   }
+  h4 {
+    font-size: 26px;
+  }
+  .contact-btn {
+    font-size: 18px;
+  }
   .hero {
     padding: 80px 20px;
   }
